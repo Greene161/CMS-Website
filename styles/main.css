@@ -1,0 +1,348 @@
+body {
+	width: 100%;
+	margin: 0;
+
+}
+
+.ribbon {
+	height: 24px;
+	background-color: rgb(34, 134, 168);
+}
+
+.title-bar {
+	display: flex;
+	padding: 24px 12px 3px 70px;
+	background-color: rgb(230, 230, 230);
+}
+
+.title-bar img {
+	width: 72px;
+}
+
+.title {
+	vertical-align: bottom;
+	margin-left: 1rem;
+	font: 1.6rem "Bodoni MT";
+	font-weight: bold;
+	line-height: 24pt;
+}
+
+.menu-ribbon {
+	padding: 1.2rem 1.2px 1rem 70px;
+	background-color: rgb(28, 92, 117);
+}
+
+.menu-ribbon .menu-btn {
+	padding: 0.5rem 1rem;
+	font-weight: bold;
+	font: 12pt "Tahoma";
+	color: white;
+	background-color: rgb(34, 124, 158);
+	border: none;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+.menu-btn:hover {
+	background-color: rgb(34, 134, 168);
+	border: solid 1px white;
+}
+
+#nav {
+	display: none;
+	margin-top: 1rem;
+}
+
+.navlink {
+	font: 11pt "Tahoma";
+	color: #eeee;
+	text-decoration: none;
+	margin-right: 1.5rem;
+	line-height: 22pt;
+}
+
+.navlink:hover {
+	color: rgb(48, 166, 209);
+}
+
+.header {
+	color: white;
+	min-height: 10vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)) , url(../images/bg.jpg) no-repeat;
+	background-blend-mode: multiply;
+	background-size: cover;
+	background-position: center;
+	padding: 2% 5%;
+
+}
+
+.general-area {
+	padding: 2% 5%;
+}
+
+.head {
+	font: 24pt "Verdana";
+	font-weight: bold;
+}
+
+p {
+	font: 12pt "Ebrima";
+}
+
+.text {
+	font: 12pt "Ebrima";
+	width: 100%;
+}
+
+.header .text {
+	max-width: 75%;
+}
+
+.quick-icons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 2rem 0px;
+}
+
+
+.icon {
+	padding: 1rem 2rem;
+	width: 72px;
+}
+
+#highlight {
+	color: rgb(48, 156, 199);
+}
+
+.info {
+	background-color: #f5f5f5;
+	color:  black;
+	display: grid;
+	grid:
+	'details map';
+}
+
+.details {
+	grid-area: "details";
+	padding: 2% 10%;
+}
+
+
+.subhead {
+	font: 18pt "Century Gothic";
+	font-weight: bold;
+}
+.map {
+	grid-area: "map";
+	min-height: 280px;
+	background: linear-gradient(rgba(0, 169, 147, 0.2), rgba(0, 169, 147, 0.2)), url("../images/map.jpg") no-repeat;
+	background-blend-mode: multiply;
+	background-size: 100%;
+	background-position: center;
+	transition: background-size 0.4s ease-in;
+}
+.map:hover {
+	background-size: 106%;
+}
+
+.news-feed {
+	padding: 2% 5%;
+	border-radius: 5px;
+}
+
+.news-feed ul {
+	list-style: none;
+	padding: 0;
+}
+
+.news-feed li {
+	margin-bottom: 20px;
+}
+
+.news-feed .subhead {
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.news-feed .navlink {
+	color: rgb(48, 136, 179);
+	text-align: center;
+}
+
+.news-item .subhead {
+	text-align: left;
+	margin-bottom: 0;
+}
+
+.news-item {
+	display: flex;
+	align-items: center;
+}
+
+.news-item img {
+	border: none;
+	width: 320px;
+	border-radius: 12px;
+	margin-right: 2.5rem;
+	transition: border 0.2s
+}
+
+.news-content {
+	flex: 1;
+}
+
+.footer {
+	color: white;
+	background-color: rgb(28, 92, 117);
+	padding: 3% 5%;
+}
+
+.footer .subhead {
+	font-size: 12pt;
+	color: rgb(48, 156, 199);
+}
+
+.footer .navlink {
+	display: block;
+}
+
+
+/* for the contact form */
+
+.form p {
+	font-size: 13pt;
+}
+
+.form .field {
+	margin: 12px 0px;
+	padding: 0.5rem 2rem;
+	border: solid 2px rgb(28, 92, 117);
+	border-radius: 10px;
+}
+
+.form .message {
+	display: block;
+	margin: 12px 0px;
+	padding: 0.5rem 2rem;
+	border: solid 2px rgb(28, 92, 117);
+	border-radius: 10px;
+	min-height: 200px;
+	width: 60%;
+}
+
+.button {
+	padding: 1rem 2rem;
+	border: none;
+	background-color: rgb(28, 92, 117);
+	color:  white;
+	border-radius: 6px;
+}
+
+.events {
+	overflow-x: auto;
+}
+
+.event {
+	width: 20%;
+	background-color: #eee;
+	min-height: 200px;
+}
+
+.event-details {
+	background-color: #eee;
+	padding:  1rem;
+}
+
+
+
+/* for small media */
+
+@media screen and (max-width: 768px) {
+	.info {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 656px) {
+	.title {
+		font-size: 1rem;
+		line-height: 14pt;
+	}
+
+	.title-bar img {
+		width: 42px;
+	}
+
+	.menu-btn {
+		font-size: 9pt;
+	}
+
+	.title-bar {
+		padding-left: 35px;
+		padding-bottom: 6px;
+	}
+
+	.text {
+		font-size: 11pt;
+	}
+
+	.head {
+		font-size: 1.3rem;
+	}
+	.menu-ribbon {
+		padding: 18px 24px;
+	}
+	.navlink {
+		display: block;
+		margin-top: 1rem;
+	}
+
+	.header .text {
+		max-width: 100%;
+		font-size: 10pt;
+	}
+
+	.info {
+		display: block;
+	}
+
+	.map {
+		background-size: cover;
+	}
+	.map:hover {
+		background-size: cover;
+	}
+
+	.subhead {
+		font-size: 14pt;
+	}
+
+	.quick-icons .icon {
+		width:  36px;
+		padding: 0.6rem;
+	}
+
+	.news-item {
+		display: block;
+	}
+
+	.news-item img {
+		width: 100%;
+		margin: 0;
+	}
+
+	.footer .navlink {
+		font-size: 10pt;
+	}
+
+	.form .message {
+		display: block;
+	}
+
+	.form p {
+		font-size: 10pt;
+	}
+
+
+}
